@@ -1,0 +1,17 @@
+[33mcommit 63c4fc1cc0181acf0f65f74abfa1ebb8af0bc75f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gleb <m_marple1@mail.ru>
+Date:   Sat Apr 8 09:22:21 2023 +1000
+
+    gitignore
+
+[33mcommit df87b0ec8cfa614675c57fb06b0c3f472d110b86[m
+Author: Gleb <m_marple1@mail.ru>
+Date:   Sat Apr 8 09:20:02 2023 +1000
+
+    test
+
+[33mcommit 5d5d642a2a603f0a7b62018f861f9fad738e42b9[m
+Author: zxcl0wn <96979586+zxcl0wn@users.noreply.github.com>
+Date:   Sat Apr 8 09:05:12 2023 +1000
+
+    Initial commit
