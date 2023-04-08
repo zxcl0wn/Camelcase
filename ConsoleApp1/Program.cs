@@ -7,6 +7,7 @@ using System.IO;
 string str;
 int snake = 0;
 var camel = 0;
+
 using (FileStream fstream = File.OpenRead("input.txt"))
 {
     byte[] buffer = new byte[fstream.Length];
@@ -16,27 +17,37 @@ using (FileStream fstream = File.OpenRead("input.txt"))
 
 
 if (str[0].ToString() == str[0].ToString().ToUpper())
+{
     snake++;
+}
 else
+{
     camel++;
+}
+    
 
-var final_string = "";
+var finalString = "";
+
 if (camel == 1)
 {
     for (int i = 0; i < str.Length; i++)
     {
         if (i == 0)
         {
-            final_string += str[i].ToString().ToUpper();
+            finalString += str[i].ToString().ToUpper();
             continue;
         }
         if (str[i] == '_')
             continue;
 
-        if (str[i-1] == '_' && str[i] != '_')
-            final_string += str[i].ToString().ToUpper();
+        if (str[i - 1] == '_' && str[i] != '_')
+        {
+            finalString += str[i].ToString().ToUpper();
+        }
         else
-            final_string += str[i];
+        {
+            finalString += str[i];
+        }
     }
 }
 
@@ -46,16 +57,21 @@ else if (snake == 1)
     {
         if (i == 0)
         {
-            final_string += str[i].ToString().ToLower();
+            finalString += str[i].ToString().ToLower();
             continue;
         }
 
         if (str[i].ToString() == str[i].ToString().ToUpper())
-            final_string += $"_{str[i].ToString().ToLower()}";
+        {
+            finalString += $"_{str[i].ToString().ToLower()}";
+        }
         else
-            final_string += str[i];
+        {
+            finalString += str[i];
+        }
     }
 }
-File.WriteAllText("output.txt", final_string);
-//Console.Write(final_string);
+
+File.WriteAllText("output.txt", finalString);
+
 // Console.WriteLine(final_string);
