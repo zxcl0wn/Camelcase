@@ -20,8 +20,6 @@ if (str[0].ToString() == str[0].ToString().ToUpper())
 else
     camel++;
 
-
-// Denis = Penis
 var final_string = "";
 if (camel == 1)
 {
